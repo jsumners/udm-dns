@@ -23,7 +23,7 @@ it on a local Docker instance. An example compose file is:
 ```yaml
 services:
   udm-dns:
-    image: udm-dns
+    image: ghcr.io/jsumners/udm-dns
     container_name: udm-dns
     restart: unless-stopped
 
@@ -87,7 +87,7 @@ the above `docker-compose` file could be modified to:
 ```yaml
 services:
   udm-dns:
-    image: udm-dns
+    image: ghcr.io/jsumners/udm-dns
     container_name: udm-dns
     restart: unless-stopped
 
