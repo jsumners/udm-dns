@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "label": "go: build (debug)",
+      "type": "shell",
+      "command": "go",
+      "args": [
+        "build",
+        "-gcflags=all=-N -l",
+        "-o",
+        "${workspaceRoot}/build/__debug_bin"
+      ],
+      "options": {
+        "cwd": "${workspaceRoot}/api-client"
+      }
+    }
+  ]
+}
