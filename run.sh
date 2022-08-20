@@ -4,7 +4,7 @@ set -e
 
 if [ ! -z ${GITHUB_TOKEN} ]; then
   echo "Downloading remote configuration file: ${GITHUB_FILE}"
-  curl -sOLf -H "authorization: token ${GITHUB_TOKEN}" \
+  curl -OLf -H "authorization: token ${GITHUB_TOKEN}" \
     -H 'accept: application/vnd.github.v4.raw' \
     "https://api.github.com/repos/${GITHUB_ORG}/${GITHUB_REPO}/contents/${GITHUB_FILE}"
 fi
